@@ -1,0 +1,39 @@
+.portfolio-item {
+  @include hover-info();
+  border: 1px solid rgba(204, 204, 204, 0.32);
+
+  // @include hover-info(); ya añade el efecto overlay. aqui solo añadimos un poco de animaciones.
+  .hover {
+    transition: all .2s;
+    transform: rotate(20deg);
+
+    &:hover {
+      visibility: visible;
+      transform: rotate(0deg);
+    }
+
+  }
+
+  .title {
+    color: white;
+    font-size: 1.4em;
+    margin: 0 10px 12px;
+    display: block;
+  }
+
+  .tags {
+    font-size: 0.96em;
+    color: #20c3c4;
+    margin: 0 10px;
+  }
+
+  .visit {
+    color: white;
+    margin: 10px 10px 0;
+    display: block;
+  }
+
+  img {
+
+  }
+}

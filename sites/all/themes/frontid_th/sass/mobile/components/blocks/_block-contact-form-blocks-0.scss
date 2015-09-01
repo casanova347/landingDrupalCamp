@@ -1,0 +1,17 @@
+@include breakpoint($mobile-devices) {
+
+  #block-contact-form-blocks-0 {
+    padding: 20px 15px;
+
+    .form-actions {
+      text-align: center;
+
+      @include breakpoint(440px) {
+        text-align: left;
+      }
+
+    }
+
+  }
+
+}

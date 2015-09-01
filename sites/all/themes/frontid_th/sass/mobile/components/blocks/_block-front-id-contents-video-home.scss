@@ -1,0 +1,70 @@
+@include breakpoint($mobile-devices) {
+
+  #block-front-id-contents-image-home {
+
+    #home-video {
+      height: auto !important;
+      overflow: hidden;
+
+      .content {
+        background: rgba(0, 0, 0, .6);
+        position: relative;
+        padding: 26% 20px 6%;
+
+        @include breakpoint(500px) {
+          padding: 21% 20px 11%;
+
+          .logo {
+            display: block !important;
+            position: relative;
+          }
+
+        }
+
+        @include breakpoint($tab) {
+          padding: 13% 20px 8%;
+        }
+
+        .inner {
+          width: 100%;
+        }
+
+        .logo {
+          max-width: 30%;
+          width: 100%;
+          margin: 0 auto 10px;
+          display: none;
+        }
+
+        .text {
+          text-align: center;
+          width: 100%;
+          color: #fff;
+
+          h1 {
+            font-size: 32px;
+            line-height: normal;
+            font-weight: 700;
+            margin: 0;
+          }
+
+          h3 {
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 26px;
+            line-height: normal;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+    }
+  }
+
+}

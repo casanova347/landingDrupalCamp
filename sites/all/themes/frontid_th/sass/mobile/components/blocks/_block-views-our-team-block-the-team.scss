@@ -1,0 +1,14 @@
+@include breakpoint($mobile-devices) {
+
+  #block-views-our-team-block-the-team {
+    padding: 20px 15px 10px;
+
+    td {
+      width: 100%;
+      float: left;
+      padding: 0;
+    }
+
+  }
+
+}

@@ -1,0 +1,60 @@
+@include breakpoint($mobile-devices) {
+
+  .portfolio-item {
+    @include hover-info();
+    border: 1px solid rgba(204, 204, 204, 0.32);
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 320px;
+    padding: 10px;
+    margin: 0 0 20px;
+
+    // Definimos breakpoint exclusivo por razones esteticas.
+    @include breakpoint(610px) {
+      min-height: 330px;
+    }
+
+    @include breakpoint($tab) {
+      min-height: 400px;
+    }
+
+    // @include hover-info(); ya añade el efecto overlay. aqui solo añadimos un poco de animaciones.
+    .hover {
+      transition: none;
+      transform: none;
+      position: relative;
+      visibility: visible;
+      height: auto;
+      opacity: 1;
+
+      .content {
+        position: relative;
+      }
+
+    }
+
+    .title {
+      color: white;
+      font-size: 18px;
+      margin: 0 0 12px;
+      display: block;
+    }
+
+    .tags {
+      font-size: 16px;
+      color: #20c3c4;
+      margin: 0 0 10px;
+    }
+
+    .visit {
+      font-size: 16px;
+      color: white;
+      display: block;
+      margin: 0 0 10px;
+    }
+
+    img {
+
+    }
+  }
+
+}

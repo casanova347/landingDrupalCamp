@@ -1,0 +1,41 @@
+// Cuando el menu está presente y no es la home tenemos que reservar un espacio arriba para que los contenidos no se le solapen.
+// @todo esto no es parte del componente. Es un requisito del theme en el que se está utilizando. Moverlo.
+@include breakpoint($mobile-devices) {
+
+  body:not(.front),
+  body.admin-menu.adminimal-menu:not(.front) {
+    margin-top: 82px !important;
+  }
+
+  .menu-fixed {
+    text-align: center;
+    transition: all .5s;
+
+    &.open {
+      left: 100%;
+    }
+
+    a.logo {
+      padding: 4px 0 0;
+    }
+
+    nav {
+      display: none;
+
+      ul {
+
+        li {
+          display: block;
+
+          a {
+            padding: 20px 20px 20px 20px;
+            font-size: 18px;
+            display: block;
+          }
+
+        }
+      }
+    }
+  }
+
+}
