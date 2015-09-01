@@ -1,0 +1,93 @@
+// Forms
+// -----------------------------------
+
+// Estilos compartidos
+textarea,
+.form-text,
+.form-file {
+  @include box-sizing(border-box);
+  width: 100%;
+  padding: 14px 20px;
+  color: #000;
+  border: 1px solid #eee;
+  box-shadow: none;
+  outline: none;
+  text-transform: capitalize;
+  background-color: #fff;
+  font-weight: 500;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+  &:focus {
+    border-color: #0072bc;
+  }
+
+}
+
+textarea {
+  min-height: 200px;
+}
+
+textarea[disabled],
+.form-text[disabled],
+.form-file[disabled] {
+}
+
+.grippie {
+  display: none;
+}
+
+.form-file {
+  vertical-align: top;
+}
+
+.form-item {
+  margin: 0 0 1.5em;
+}
+
+input[type="submit"] {
+  background-color: $color-blue-a;
+  color: #fff;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 700;
+  padding: 12px 55px;
+  border: 2px solid $color-blue-a;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: $color-blue-b;
+  }
+
+}
+
+input.form-autocomplete {
+}
+
+label {
+}
+
+.form-checkbox {
+  position: relative;
+  top: 3px;
+}
+
+fieldset {
+  @include box-sizing(border-box);
+  padding-top: 30px;
+  position: relative;
+  margin: 0;
+
+  legend {
+    position: absolute;
+    top: 10px;
+
+    span {
+    }
+  }
+
+  .fieldset-wrapper {
+  }
+
+}

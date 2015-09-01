@@ -1,0 +1,51 @@
+.location-block {
+  padding: 90px 0;
+
+  h2 {
+    color: $color-blue-a;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+    line-height: 20px;
+    text-align: center;
+    margin: 0 0 10px;
+  }
+
+  td {
+    text-align: center;
+
+    i {
+      font-size: 48px;
+      transition: all 0.3s ease-out 0s;
+    }
+
+    &:hover i, &:focus i {
+      color: $color-blue-a;
+    }
+
+    h3 {
+      margin: 20px 0 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 300;
+
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        color: $color-grey-d;
+        line-height: 18px;
+        display: block;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,35 @@
+#block-contact-form-blocks-0 {
+  padding: 90px 0 65px;
+
+  h2 {
+    color: $color-blue-a;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 25px;
+  }
+
+  .contact-form {
+
+    .form-item {
+      padding: 0 15px;
+    }
+
+    .form-type-textfield {
+      width: 33.33333333%;
+      float: left;
+      box-sizing: border-box;
+      margin: 0 0 30px;
+    }
+
+    .form-type-textarea {
+      box-sizing: border-box;
+    }
+
+    .form-actions {
+      text-align: center;
+    }
+
+  }
+
+}

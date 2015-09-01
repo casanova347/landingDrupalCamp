@@ -2,12 +2,12 @@
   <div class="content">
     <div class="inner">
       <div class="vertical-content">
-        <img src="/<?php print $path; ?>/assets/img/logo-grey.png" class="logo" alt="Front.id">
+        <img src="/<?php print $path; ?>/assets/img/logo.png" class="logo" alt="dcamp">
 
         <div class="text">
-          <h1>Front end lovers</h1>
+          <h1>DrupalCamp Spain<br>Granada 2015</h1>
 
-          <h3>A plug&play Front-end team for your company</h3>
+          <h3>23 Oct. - 25 Oct., Granada</h3>
         </div>
       </div>
     </div>
